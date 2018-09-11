@@ -231,7 +231,8 @@ TaCerto.Controladora.Jogo.Lacuna = {
 						let aux = respostasHtml[i];
 						aux.classList.add("animated", "fadeOut");
 						setTimeout(function(){
-							aux.parentNode.parentNode.removeChild(aux.parentNode);
+							if(aux)
+								aux.parentNode.parentNode.removeChild(aux.parentNode);
 						},500);
 					}
 				}
